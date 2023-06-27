@@ -37,7 +37,7 @@ function Payment() {
     if(number < 1) return
     const trimmedNumber = number.replace(/\s/g, '');
     const chunks = trimmedNumber.match(/.{1,4}/g);
-    const formattedNumber = chunks.join('');
+    const formattedNumber = chunks.join(' ');
 
     return formattedNumber;
   }
