@@ -1,0 +1,217 @@
+.product-container{
+  display: flex;
+  max-width: 1300px;
+  height: 100%;
+  margin: 2.9rem auto;
+  background-color: white;
+}
+
+.select-image{
+  flex: 1.5;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.select-image .title {
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.production-description{
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.production-description small span {
+  color: rgb(55, 156, 55);
+  font-weight: bold;
+}
+
+
+.production-description .info-list {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.production-description .info-list .list {
+  margin-top: 1rem;
+  line-height: 1.7em;
+  font-size: 15px;
+}
+
+.production-description .info-list .list p {
+  font-size: 14px;
+}
+
+        /* buy content*/
+
+.buy-product {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  height: 660px;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+  padding: 10px;
+  flex: .8;
+}
+
+.buy-product .storage {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.buy-product .price-value {
+  margin: 1rem 0;
+}
+
+.buy-product .price-value .price {
+  font-size: 2rem;
+  color: rgb(255, 101, 0);
+}
+
+.buy-product .price-value span {
+  color: green;
+}
+
+.storage #storage-stats {
+  margin-bottom: 1rem;
+}
+
+.storage #storage-stats svg {
+  color: green;
+}
+
+     /* Select quantity*/
+
+
+     .dropdown {
+      position: relative;
+      user-select: none;
+    }
+    
+    .dropdown .set-quantity {
+      padding: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.185);
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+    
+    .dropdown .set-quantity svg{
+      font-size: 18px;
+    }
+    
+    .dropdown .dropdown-content {
+      background-color: white;
+      position: absolute;
+      top: 110%;
+      padding: 10px;
+      box-shadow: 3px 3px 10px 6px rgba(0, 0, 0, 0.06);
+      width: 100%;
+    }
+    
+    .dropdown .dropdown-content .item {
+      padding: 10px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .dropdown .dropdown-content .item:hover {
+      background-color: #f4f4f4;
+    }
+    
+    .dropdown .dropdown-content form input{
+      margin-right: 10px;
+      border: none;
+      outline: none;
+      padding: 5px;
+      border: 1px solid #f4f4f4;
+      border-radius: 5px;
+    }
+    
+    .dropdown .dropdown-content form button {
+      border: none;
+      padding: 5px;
+      border-radius: 5px;
+      background-color:#3483fa;
+      color: white;
+      transition: 0.3s;
+    }
+    
+    
+    .dropdown .dropdown-content form button:hover {
+      background-color: #235aac;
+      transform: scale(1.1);
+    }
+    
+    form input::-webkit-outer-spin-button,
+    form input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+
+
+.buy-product .buy-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+}
+
+.buy-product .buy-buttons button {
+  cursor: pointer;
+  padding: 16px 10px;
+  border: none;
+  border-radius: 7px;
+  transition: .4s;
+}
+.buy-product .buy-buttons #buy-now {
+  background-color: #3483fa;
+  color: white;
+  font-size: 16px;
+}
+
+.buy-product .buy-buttons #buy-now:hover {
+  background-color: #235aac;
+}
+
+.buy-product .buy-buttons #add-to-cart {
+  background-color: #e2edfc;
+  font-size: 16px;
+  color: #3483fa;
+  font-weight: 500;
+}
+
+.buy-product .buy-buttons #add-to-cart:hover {
+  background-color: #8eabd454;
+}
+
+
+#credit {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#credit img,
+#debito img,
+#boleto img{
+  width: 45px;
+  margin: 5px 0;
+}
+
+@media (max-width: 980px) {
+  .product-container{
+    flex-direction: column;
+  }
+  
+  .production-description {
+    order: 1;
+  }
+}

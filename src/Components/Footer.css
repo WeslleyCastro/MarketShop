@@ -1,0 +1,33 @@
+footer{
+  background-color: rgb(66, 70, 77);
+  padding: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10rem;
+}
+
+footer ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin-top: 14px;
+}
+
+footer h3 {
+  font-size: 18px;
+}
+
+footer ul svg {
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+}
+
+footer small {
+  margin-top: 5px;
+  color: rgba(128, 128, 128, 0.555);
+}
