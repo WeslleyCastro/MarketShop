@@ -93,7 +93,7 @@ function Cart() {
   }
 
   const handlePaymentProductsMutate = useMutation((products) => {
-    axios.post(`https://json-shopping.vercel.app/products/`, {
+    axios.post(`https://json-shopping.vercel.app/payment/`, {
       products,
       total: total,
       bairro: addressData.bairro,
