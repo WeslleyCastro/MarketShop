@@ -74,7 +74,7 @@ function Cart() {
     e.preventDefault()
     if(address == "") return
 
-    axios.get(`http://viacep.com.br/ws/${address}/json/`)
+    axios.get(`https://viacep.com.br/ws/${address}/json/`)
     .then(response => setAddressData(response.data))
     .catch(() => setAddressData("error"))
   }
